@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  margin-top: 2rem;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.4);
+}
+
+.container main {
+  width: 100%;
+}
+
+.form-section form {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-group label {
+  font-weight: bold;
+}
+
+.input-group label small {
+  color: #ff0000;
+}
+
+.input-group .input-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.input-field.error {
+  border-color: #ff0000;
+}
+
+button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  max-width: 150px;
+  height: 2.188rem;
+  padding: 0.625rem 1rem;
+  border-radius: 0.563rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.error-message {
+  left: 0;
+  top: 100%;
+  color: #ff0000;
+  font-weight: 600;
+  position: absolute;
+  font-size: 0.75rem;
+}
+
+.cart-table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+
+.cart-table thead th {
+  padding: 8px;
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  background-color: rgb(233, 233, 233);
+}
+
+.cart-table thead th:not(:first-child) {
+  text-align: center;
+}
+
+.cart-table tbody td {
+  padding: 8px;
+  align-content: center;
+  border: 1px solid #d6d6d6;
+}
+
+.cart-table tbody td:first-child {
+  text-align: left;
+}
+
+.cart-table td:not(:first-child) {
+  text-align: center;
+}
+
+.cart-table tbody td:nth-child(2) div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-table tbody td button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-table tbody td button:hover {
+  transform: scale(1.1);
+}
+
+.discount-section {
+  width: 100%;
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discount-container {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
