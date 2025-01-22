@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  padding: 21px 120px;
+  border-bottom: 1px solid #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  color: #008ecc;
+}
+
+.header__search {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.header__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header__input {
+  width: 100%;
+  padding: 12px 16px 12px 60px;
+  border: none;
+  background-color: #f3f9fb;
+  border-radius: 10px;
+}
+
+.header__icon {
+  position: absolute;
+  left: 16px;
+  color: #008ecc;
+  pointer-events: none;
+}
+
+.header__cart {
+  color: #008ecc;
+}
