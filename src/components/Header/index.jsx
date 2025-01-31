@@ -1,22 +1,24 @@
 import { Search, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
+
 import "./styles.css";
+import { useCart } from "../../context/CartContext";
 
 export function Header() {
+  const { cart } = useCart();
+  const cartCount = cart.reduce((count, item) => count + item.quantity, 0);
+
   return (
     <header className="header">
-      <h1 className="header__title">Shopee Low Budget</h1>
-      <div className="header__search">
-        <div className="header__input-wrapper">
-          <Search className="header__icon" color="#008ecc" />
-          <input
-            className="header__input"
-            type="text"
-            placeholder="Pesquisar"
-            aria-label="Pesquisar produtos"
-          />
-        </div>
-      </div>
-      <ShoppingCart className="header__cart" color="#008ecc" />
+      <Link to="/">
+        <h1 className="header_title">Shopee Low Budget</h1>
+      </Link>
+      <section className="header_cart-wrapper">
+        <Link to="/cart">
+          <ShoppingCart className="header_cart" color="#008ecc" />
+          <span className="header_cart-count">{cartCount}</span>
+        </Link>
+      </section>
     </header>
   );
 }
